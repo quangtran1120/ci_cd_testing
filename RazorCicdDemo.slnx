@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/RazorCicdDemo.Web/RazorCicdDemo.Web.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/RazorCicdDemo.IntegrationTests/RazorCicdDemo.IntegrationTests.csproj" />
+    <Project Path="tests/RazorCicdDemo.UnitTests/RazorCicdDemo.UnitTests.csproj" />
+  </Folder>
+</Solution>

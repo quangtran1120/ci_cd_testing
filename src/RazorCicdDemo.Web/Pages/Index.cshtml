@@ -1,0 +1,45 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Razor CI/CD Demo</h1>
+    <p class="lead">A small Razor Pages app used to practice GitHub Actions, Terraform, ACR, and Azure App Service slots.</p>
+</div>
+
+<section class="card mt-4">
+    <div class="card-body">
+        <h2 class="h4">Deployment readiness</h2>
+        <p class="mb-2">
+            Status:
+            <strong>@Model.ReadinessSummary.Status</strong>
+        </p>
+        <p class="mb-3">
+            Progress:
+            <strong>@Model.ReadinessSummary.CompletedItems</strong>
+            of
+            <strong>@Model.ReadinessSummary.TotalItems</strong>
+            tasks complete
+            (<strong>@Model.ReadinessSummary.CompletionPercentage%</strong>)
+        </p>
+
+        <ul class="list-group">
+            @foreach (var item in Model.ReadinessSummary.Items)
+            {
+                <li class="list-group-item d-flex justify-content-between align-items-center">
+                    <span>@item.Name</span>
+                    @if (item.IsComplete)
+                    {
+                        <span class="badge bg-success">Done</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-secondary">Pending</span>
+                    }
+                </li>
+            }
+        </ul>
+    </div>
+</section>

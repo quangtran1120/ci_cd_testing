@@ -1,0 +1,56 @@
+# Build output
+bin/
+obj/
+out/
+publish/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.rsuser
+.vs/
+.vscode/
+.idea/
+
+# Rider
+*.sln.iml
+
+# macOS
+.DS_Store
+
+# Logs
+*.log
+TestResults/
+coverage/
+coverage.cobertura.xml
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+
+# ASP.NET / secrets
+secrets.json
+appsettings.Local.json
+appsettings.*.local.json
+
+# Docker
+docker-compose.override.yml
+
+# Terraform
+**/.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraform.lock.hcl
+
+# Azure CLI local config, if used inside this repo during sandboxed runs
+.azure/

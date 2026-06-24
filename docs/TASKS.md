@@ -1,0 +1,112 @@
+# CI/CD Task Tracker
+
+Use this checklist to track the implementation step by step.
+
+## 01 - Application foundation
+
+- [x] Create solution.
+- [x] Create ASP.NET Core Razor Pages web application.
+- [x] Add web project to solution.
+- [x] Add pinned .NET SDK configuration with `global.json`.
+- [x] Add shared build settings with `Directory.Build.props`.
+- [x] Add `.editorconfig`.
+- [x] Add `.gitignore`.
+- [x] Add a simple business feature to test.
+- [x] Add health endpoint for smoke testing.
+- [ ] Run application locally.
+
+## 02 - Testing
+
+- [x] Create unit test project.
+- [x] Create integration test project.
+- [x] Add unit tests for application logic.
+- [x] Add integration tests with `WebApplicationFactory`.
+- [x] Add HTTP test for home page.
+- [x] Add HTTP test for health endpoint.
+- [x] Run all tests locally.
+
+## 03 - Containerization
+
+- [x] Add production `Dockerfile`.
+- [x] Add `.dockerignore`.
+- [x] Build image locally.
+- [x] Run container locally.
+- [x] Verify health endpoint inside local container.
+
+## 04 - GitHub repository
+
+- [x] Initialize Git repository.
+- [x] Make initial commit.
+- [ ] Create GitHub repository.
+- [ ] Push local repository to GitHub.
+- [ ] Protect `main` branch.
+- [ ] Require pull request before merge.
+- [ ] Require passing CI before merge.
+
+## 05 - Pull request CI
+
+- [ ] Add `.github/workflows/ci.yml`.
+- [ ] Restore dependencies.
+- [ ] Build application.
+- [ ] Run unit tests.
+- [ ] Run integration tests.
+- [ ] Validate Docker image build.
+- [ ] Publish test results.
+
+## 06 - Terraform infrastructure
+
+- [ ] Add Terraform provider configuration.
+- [ ] Add variables and outputs.
+- [ ] Create resource group.
+- [ ] Create Azure Container Registry.
+- [ ] Create Linux App Service Plan.
+- [ ] Create Linux Web App for Containers.
+- [ ] Create staging deployment slot.
+- [ ] Add managed identity to production slot.
+- [ ] Add managed identity to staging slot.
+- [ ] Grant `AcrPull` to App Service identities.
+- [ ] Configure health checks.
+- [ ] Configure Application Insights.
+- [ ] Run `terraform fmt`.
+- [ ] Run `terraform validate`.
+- [ ] Apply infrastructure.
+
+## 07 - GitHub to Azure authentication
+
+- [ ] Create Azure app registration or managed identity for GitHub Actions.
+- [ ] Add federated credential for GitHub repository.
+- [ ] Grant required Azure roles.
+- [ ] Add GitHub variables or secrets:
+  - [ ] `AZURE_CLIENT_ID`
+  - [ ] `AZURE_TENANT_ID`
+  - [ ] `AZURE_SUBSCRIPTION_ID`
+  - [ ] `AZURE_RESOURCE_GROUP`
+  - [ ] `AZURE_WEBAPP_NAME`
+  - [ ] `AZURE_ACR_NAME`
+- [ ] Create `staging` GitHub environment.
+- [ ] Create `production` GitHub environment.
+- [ ] Add approval requirement to `production`.
+
+## 08 - Deployment pipeline
+
+- [ ] Add `.github/workflows/deploy.yml`.
+- [ ] Trigger deployment on push to `main`.
+- [ ] Build and test before deployment.
+- [ ] Log in to Azure with OIDC.
+- [ ] Log in to ACR.
+- [ ] Build Docker image.
+- [ ] Tag Docker image with commit SHA.
+- [ ] Push image to ACR.
+- [ ] Deploy image to staging slot.
+- [ ] Run staging smoke test.
+- [ ] Wait for production environment approval.
+- [ ] Swap staging slot into production.
+- [ ] Run production smoke test.
+
+## 09 - Rollback and operations
+
+- [ ] Document rollback by slot swap.
+- [ ] Document rollback by redeploying previous image tag.
+- [ ] Add troubleshooting notes for failed container start.
+- [ ] Add troubleshooting notes for ACR permission errors.
+- [ ] Add troubleshooting notes for failed slot swap.
