@@ -37,8 +37,8 @@ Use this checklist to track the implementation step by step.
 
 - [x] Initialize Git repository.
 - [x] Make initial commit.
-- [ ] Create GitHub repository.
-- [ ] Push local repository to GitHub.
+- [x] Create GitHub repository.
+- [x] Push local repository to GitHub.
 - [ ] Protect `main` branch.
 - [ ] Require pull request before merge.
 - [ ] Require passing CI before merge.
