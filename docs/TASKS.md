@@ -45,13 +45,13 @@ Use this checklist to track the implementation step by step.
 
 ## 05 - Pull request CI
 
-- [ ] Add `.github/workflows/ci.yml`.
-- [ ] Restore dependencies.
-- [ ] Build application.
-- [ ] Run unit tests.
-- [ ] Run integration tests.
-- [ ] Validate Docker image build.
-- [ ] Publish test results.
+- [x] Add `.github/workflows/ci.yml`.
+- [x] Restore dependencies.
+- [x] Build application.
+- [x] Run unit tests.
+- [x] Run integration tests.
+- [x] Validate Docker image build.
+- [x] Publish test results.
 
 ## 06 - Terraform infrastructure
 
