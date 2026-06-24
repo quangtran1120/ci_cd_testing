@@ -90,19 +90,19 @@ Use this checklist to track the implementation step by step.
 
 ## 08 - Deployment pipeline
 
-- [ ] Add `.github/workflows/deploy.yml`.
+- [x] Add `.github/workflows/deploy.yml`.
 - [ ] Trigger deployment on push to `main`.
-- [ ] Build and test before deployment.
-- [ ] Log in to Azure with OIDC.
-- [ ] Log in to ACR.
-- [ ] Build Docker image.
-- [ ] Tag Docker image with commit SHA.
-- [ ] Push image to ACR.
-- [ ] Deploy image to staging slot.
-- [ ] Run staging smoke test.
-- [ ] Wait for production environment approval.
-- [ ] Swap staging slot into production.
-- [ ] Run production smoke test.
+- [x] Build and test before deployment.
+- [x] Log in to Azure with OIDC.
+- [x] Log in to ACR.
+- [x] Build Docker image.
+- [x] Tag Docker image with commit SHA.
+- [x] Push image to ACR.
+- [x] Deploy image to staging slot.
+- [x] Run staging smoke test.
+- [x] Wait for production environment approval.
+- [x] Swap staging slot into production.
+- [x] Run production smoke test.
 
 ## 09 - Rollback and operations
 
