@@ -50,7 +50,6 @@ override.tf
 override.tf.json
 *_override.tf
 *_override.tf.json
-.terraform.lock.hcl
 
 # Azure CLI local config, if used inside this repo during sandboxed runs
 .azure/

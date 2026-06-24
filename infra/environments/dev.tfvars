@@ -1,0 +1,7 @@
+project_name              = "razorcicddemo"
+environment               = "dev"
+location                  = "eastus"
+github_repository         = "quangtran1120/ci_cd_testing"
+container_image_name      = "razor-cicd-demo"
+bootstrap_image_tag       = "bootstrap"
+app_service_plan_sku_name = "S1"

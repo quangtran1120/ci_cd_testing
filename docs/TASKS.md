@@ -39,6 +39,7 @@ Use this checklist to track the implementation step by step.
 - [x] Make initial commit.
 - [x] Create GitHub repository.
 - [x] Push local repository to GitHub.
+- [x] Document branch protection settings.
 - [ ] Protect `main` branch.
 - [ ] Require pull request before merge.
 - [ ] Require passing CI before merge.
@@ -55,20 +56,20 @@ Use this checklist to track the implementation step by step.
 
 ## 06 - Terraform infrastructure
 
-- [ ] Add Terraform provider configuration.
-- [ ] Add variables and outputs.
-- [ ] Create resource group.
-- [ ] Create Azure Container Registry.
-- [ ] Create Linux App Service Plan.
-- [ ] Create Linux Web App for Containers.
-- [ ] Create staging deployment slot.
-- [ ] Add managed identity to production slot.
-- [ ] Add managed identity to staging slot.
-- [ ] Grant `AcrPull` to App Service identities.
-- [ ] Configure health checks.
-- [ ] Configure Application Insights.
-- [ ] Run `terraform fmt`.
-- [ ] Run `terraform validate`.
+- [x] Add Terraform provider configuration.
+- [x] Add variables and outputs.
+- [x] Create resource group.
+- [x] Create Azure Container Registry.
+- [x] Create Linux App Service Plan.
+- [x] Create Linux Web App for Containers.
+- [x] Create staging deployment slot.
+- [x] Add managed identity to production slot.
+- [x] Add managed identity to staging slot.
+- [x] Grant `AcrPull` to App Service identities.
+- [x] Configure health checks.
+- [x] Configure Application Insights.
+- [x] Run `terraform fmt`.
+- [x] Run `terraform validate`.
 - [ ] Apply infrastructure.
 
 ## 07 - GitHub to Azure authentication
